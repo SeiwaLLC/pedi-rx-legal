@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー｜小児薬剤投与量検索アプリ</title>
+<meta name="description" content="小児薬剤投与量検索アプリ プライバシーポリシー（案）。運営者：Seiwa LLC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F7F9;
+    --paper-raise:#FFFFFF;
+    --ink:#1B2430;
+    --ink-soft:#5A6472;
+    --ink-faint:#8B93A1;
+    --rule:#DCE0E7;
+    --rule-strong:#C3C9D3;
+    --accent:#2F4B7C;
+    --accent-deep:#1E345A;
+    --accent-soft:#EBF0F8;
+    --notice-bg:#FBF3E2;
+    --notice-ink:#7A5310;
+    --notice-rule:#E8D3A0;
+    --radius:10px;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation:none !important; transition:none !important;}
+  }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:16px;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);}
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--accent);
+    outline-offset:2px;
+    border-radius:4px;
+  }
+
+  /* ── header ── */
+  .masthead{
+    background:var(--accent-deep);
+    color:#EDF1F8;
+    padding:56px 24px 40px;
+  }
+  .masthead-inner{max-width:var(--maxw); margin:0 auto;}
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:#9FB4D8;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    margin-bottom:18px;
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:#6E8FC4;}
+  .masthead h1{
+    font-family:"Shippori Mincho",serif;
+    font-weight:700;
+    font-size:clamp(26px,4.4vw,38px);
+    line-height:1.5;
+    margin:0 0 6px;
+  }
+  .masthead .sub{
+    font-family:"Shippori Mincho",serif;
+    font-size:clamp(14px,2vw,16px);
+    color:#B9C7E2;
+    margin:0 0 28px;
+  }
+  .meta-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:14px 28px;
+    border-top:1px solid rgba(255,255,255,.14);
+    padding-top:22px;
+  }
+  .meta-item .k{font-size:11px; letter-spacing:.08em; color:#8FA3C9; margin-bottom:4px;}
+  .meta-item .v{font-size:14px; color:#EDF1F8; font-weight:500;}
+
+  /* ── layout ── */
+  .layout{
+    max-width:calc(var(--maxw) + 260px);
+    margin:0 auto;
+    padding:44px 24px 90px;
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:44px;
+    align-items:start;
+  }
+  @media (max-width:880px){
+    .layout{grid-template-columns:1fr; padding-top:28px;}
+  }
+
+  /* ── TOC ── */
+  .toc{
+    position:sticky;
+    top:24px;
+    background:var(--paper-raise);
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    padding:18px 16px;
+  }
+  @media (max-width:880px){ .toc{position:static;} }
+  .toc-title{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    letter-spacing:.1em;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+    margin:0 0 10px 4px;
+  }
+  .toc ol{list-style:none; margin:0; padding:0;}
+  .toc li a{
+    display:flex;
+    gap:8px;
+    align-items:baseline;
+    text-decoration:none;
+    color:var(--ink-soft);
+    font-size:13.5px;
+    padding:6px 4px;
+    border-radius:6px;
+    line-height:1.5;
+  }
+  .toc li a:hover{background:var(--accent-soft); color:var(--accent-deep);}
+  .toc li a .num{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    flex-shrink:0;
+    width:20px;
+  }
+
+  /* ── document ── */
+  .doc{max-width:var(--maxw);}
+  .preamble{
+    background:var(--paper-raise);
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    padding:26px 28px;
+    margin-bottom:36px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  .preamble p{margin:0;}
+  .preamble strong{color:var(--ink);}
+
+  .article{
+    display:grid;
+    grid-template-columns:56px 1fr;
+    gap:18px;
+    padding:30px 0;
+    border-top:1px solid var(--rule);
+  }
+  .article:first-of-type{border-top:none; padding-top:0;}
+  .article-num{
+    font-family:"Shippori Mincho",serif;
+    font-weight:700;
+    font-size:34px;
+    color:var(--accent);
+    line-height:1;
+    padding-top:2px;
+  }
+  .article-body h2{
+    font-family:"Shippori Mincho",serif;
+    font-weight:700;
+    font-size:19px;
+    margin:0 0 14px;
+    color:var(--ink);
+  }
+  .article-body p{margin:0 0 14px; font-size:15px;}
+  .article-body p:last-child{margin-bottom:0;}
+  .article-body strong{
+    background:linear-gradient(transparent 62%, var(--accent-soft) 62%);
+    font-weight:600;
+  }
+
+  table.pp-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:6px 0 16px;
+    font-size:13.5px;
+  }
+  table.pp-table th, table.pp-table td{
+    border:1px solid var(--rule);
+    padding:10px 12px;
+    text-align:left;
+    vertical-align:top;
+  }
+  table.pp-table th{
+    background:var(--accent-soft);
+    color:var(--accent-deep);
+    font-weight:600;
+    font-size:12.5px;
+    letter-spacing:.02em;
+  }
+  table.pp-table td.col-type{color:var(--ink); font-weight:500; white-space:nowrap;}
+  table.pp-table td.col-note{color:var(--ink-soft);}
+
+  @media (max-width:640px){
+    table.pp-table{border:none;}
+    table.pp-table thead{display:none;}
+    table.pp-table, table.pp-table tbody, table.pp-table tr, table.pp-table td{
+      display:block; width:100%;
+    }
+    table.pp-table tr{
+      border:1px solid var(--rule);
+      border-radius:8px;
+      overflow:hidden;
+      margin-bottom:12px;
+    }
+    table.pp-table td{
+      border:none;
+      border-top:1px solid var(--rule);
+      padding:10px 14px;
+    }
+    table.pp-table tr td:first-child{border-top:none; background:var(--accent-soft);}
+    table.pp-table td.col-type{white-space:normal;}
+    table.pp-table td::before{
+      content:attr(data-label);
+      display:block;
+      font-family:"JetBrains Mono",monospace;
+      font-size:10.5px;
+      letter-spacing:.06em;
+      color:var(--ink-faint);
+      margin-bottom:3px;
+    }
+    table.pp-table tr td:first-child::before{display:none;}
+  }
+
+  .contact-box{
+    background:var(--paper-raise);
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    padding:18px 20px;
+    font-size:14.5px;
+  }
+  .contact-box .row{display:flex; gap:10px; margin-bottom:6px;}
+  .contact-box .row:last-child{margin-bottom:0;}
+  .contact-box .row .k{color:var(--ink-faint); width:72px; flex-shrink:0; font-size:13px;}
+
+  .draft-note{
+    margin-top:8px;
+    padding:16px 18px;
+    background:var(--notice-bg);
+    border:1px solid var(--notice-rule);
+    border-radius:8px;
+    color:var(--notice-ink);
+    font-size:13.5px;
+    line-height:1.8;
+  }
+  .confirm-note{
+    margin-top:8px;
+    padding:16px 18px;
+    background:var(--accent-soft);
+    border:1px solid #C7D5EA;
+    border-radius:8px;
+    color:var(--accent-deep);
+    font-size:13.5px;
+    line-height:1.8;
+  }
+  .confirm-note .tag{
+    display:inline-block;
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    letter-spacing:.06em;
+    background:var(--accent);
+    color:#fff;
+    padding:2px 8px;
+    border-radius:4px;
+    margin-right:8px;
+    vertical-align:middle;
+  }
+
+  /* ── addendum / footer ── */
+  .addendum{
+    margin-top:8px;
+    padding-top:26px;
+    border-top:1px solid var(--rule);
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+  .addendum .label{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    letter-spacing:.1em;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+    display:block;
+    margin-bottom:8px;
+  }
+
+  footer{
+    border-top:1px solid var(--rule);
+    background:var(--paper-raise);
+    margin-top:20px;
+  }
+  .footer-inner{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:36px 24px 48px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+    justify-content:space-between;
+    align-items:flex-start;
+  }
+  @media (max-width:880px){ .footer-inner{max-width:calc(var(--maxw) + 260px);} }
+  .footer-org{font-size:13.5px; color:var(--ink-soft); line-height:1.7;}
+  .footer-org strong{color:var(--ink); font-family:"Shippori Mincho",serif; font-size:15px;}
+  .footer-links{display:flex; gap:22px; flex-wrap:wrap;}
+  .footer-links a{
+    font-size:13.5px;
+    text-decoration:none;
+    color:var(--accent);
+    border-bottom:1px solid transparent;
+  }
+  .footer-links a:hover{border-bottom-color:var(--accent);}
+  .print-hint{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    text-align:center;
+    padding:18px 24px 40px;
+  }
+
+  @media print{
+    .masthead{background:#fff !important; color:#000 !important;}
+    .eyebrow, .meta-item .k, .meta-item .v{color:#000 !important;}
+    .toc{display:none;}
+    .layout{grid-template-columns:1fr; padding:0; max-width:100%;}
+    body{background:#fff;}
+    .article-num{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="eyebrow"><span class="dot"></span>PRIVACY POLICY&nbsp;/&nbsp;案&nbsp;v1</div>
+    <h1>小児薬剤投与量検索アプリ<br>プライバシーポリシー</h1>
+    <p class="sub">（PMDA添付資料 第5号）</p>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">制定日</div><div class="v">令和8年（2026年）7月22日</div></div>
+      <div class="meta-item"><div class="k">運営者</div><div class="v">開発者（小児科専門医）</div></div>
+      <div class="meta-item"><div class="k">対象アプリ</div><div class="v">小児薬剤投与量検索アプリ</div></div>
+      <div class="meta-item"><div class="k">対象利用者</div><div class="v">医師・歯科医師・薬剤師</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="目次">
+    <p class="toc-title">目次</p>
+    <ol>
+      <li><a href="#a1"><span class="num">01</span>基本方針</a></li>
+      <li><a href="#a2"><span class="num">02</span>取得する情報及び取得しない情報</a></li>
+      <li><a href="#a3"><span class="num">03</span>端末内データの管理</a></li>
+      <li><a href="#a4"><span class="num">04</span>第三者提供</a></li>
+      <li><a href="#a5"><span class="num">05</span>外部送信・SDK等について</a></li>
+      <li><a href="#a6"><span class="num">06</span>情報セキュリティ</a></li>
+      <li><a href="#a7"><span class="num">07</span>利用対象者に関する留意事項</a></li>
+      <li><a href="#a8"><span class="num">08</span>本ポリシーの改定</a></li>
+      <li><a href="#a9"><span class="num">09</span>お問い合わせ窓口</a></li>
+    </ol>
+  </nav>
+
+  <main class="doc">
+
+    <section class="preamble">
+      <p>開発者（以下「運営者」といいます。）は、運営者が提供する<strong>「小児薬剤投与量検索アプリ」</strong>（以下「本アプリ」といいます。）における利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。本アプリは、救急外来等で小児患者に対応する医師（歯科医師含む）・薬剤師のみを対象とした投与量参照ツールであり、本ポリシーはその利用実態に即して定めるものです。</p>
+    </section>
+
+    <article class="article" id="a1">
+      <div class="article-num">01</div>
+      <div class="article-body">
+        <h2>第1条（基本方針）</h2>
+        <p>本アプリは、<strong>個人情報及び健康・医療に関するデータを一切収集しない方針</strong>で設計されています。本アプリの利用にあたり、氏名・メールアドレス・電話番号等の会員登録は不要であり、運営者のサーバーに送信される利用者情報はありません。</p>
+      </div>
+    </article>
+
+    <article class="article" id="a2">
+      <div class="article-num">02</div>
+      <div class="article-body">
+        <h2>第2条（取得する情報及び取得しない情報）</h2>
+        <p>本アプリにおける情報の取扱いは以下のとおりです。</p>
+        <table class="pp-table">
+          <thead><tr><th>情報の種類</th><th>取扱い</th><th>補足</th></tr></thead>
+          <tbody>
+            <tr><td class="col-type" data-label="情報の種類">利用者・患者の個人情報<br>（氏名・生年月日・連絡先等）</td><td data-label="取扱い">収集しない</td><td class="col-note" data-label="補足">会員登録機能自体が存在しません。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">検索した患者の症状・年齢・体重等の入力値</td><td data-label="取扱い">収集しない（送信しない）</td><td class="col-note" data-label="補足">入力値は投与量計算のためアプリ内（端末内メモリ）で処理されるのみで、運営者のサーバーその他外部への送信は一切行いません。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">投与量表示の同意設定<br>（ON／OFFの状態）</td><td data-label="取扱い">端末内にのみ保存</td><td class="col-note" data-label="補足">端末のlocalStorageに保存され、外部送信は行いません。アプリを削除すると消去されます。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">お気に入り登録した薬剤の情報</td><td data-label="取扱い">端末内にのみ保存</td><td class="col-note" data-label="補足">同上。端末のlocalStorageに保存され、外部送信は行いません。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">端末の識別情報（広告ID等）</td><td data-label="取扱い">収集しない</td><td class="col-note" data-label="補足">本アプリは広告表示機能を備えていません。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">利用状況の解析データ<br>（アクセス解析・クラッシュログ等）</td><td data-label="取扱い">現時点では収集しない</td><td class="col-note" data-label="補足">本アプリは現時点で外部解析ツール（アナリティクス等）を組み込んでいません。将来的に導入する場合は、本ポリシーを改定し、事前に本アプリ内で告知します。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="article" id="a3">
+      <div class="article-num">03</div>
+      <div class="article-body">
+        <h2>第3条（端末内データの管理）</h2>
+        <p>前条に定める投与量表示の同意設定及びお気に入り情報は、いずれも利用者の端末内（ブラウザ又はアプリのローカルストレージ）にのみ保存され、運営者を含む第三者がこれを閲覧・取得することはできません。利用者は、端末の設定又はアプリのアンインストールにより、これらのデータをいつでも削除することができます。</p>
+      </div>
+    </article>
+
+    <article class="article" id="a4">
+      <div class="article-num">04</div>
+      <div class="article-body">
+        <h2>第4条（第三者提供）</h2>
+        <p>運営者は、本アプリを通じて取得する情報が存在しないため、第三者への情報提供は行いません。将来的に取扱いを変更する場合は、法令に従い、事前に利用者への周知又は同意取得を行います。</p>
+      </div>
+    </article>
+
+    <article class="article" id="a5">
+      <div class="article-num">05</div>
+      <div class="article-body">
+        <h2>第5条（外部送信・SDK等について）</h2>
+        <p>本アプリは、オフラインでの動作を前提として設計されており、薬剤情報等のデータはアプリ内蔵データとして端末にあらかじめ格納されています。本ポリシー制定時点において、広告SDK・アクセス解析SDKその他の外部送信を伴う機能は組み込んでいません。今後、決済機能（買い切り型課金）やアプリストアが提供する標準的な機能（例：Apple／Googleの決済処理基盤）を利用する場合、当該基盤の提供者が定めるプライバシーポリシーが別途適用されることがあります。</p>
+      </div>
+    </article>
+
+    <article class="article" id="a6">
+      <div class="article-num">06</div>
+      <div class="article-body">
+        <h2>第6条（情報セキュリティ）</h2>
+        <p>本アプリは個人情報を収集しない設計とすることで、情報漏えいリスクそのものを低減しています。端末内に保存されるデータ（同意設定・お気に入り）についても、他のアプリからアクセスできない領域（各OSが提供するアプリケーションサンドボックス）に保存されます。</p>
+      </div>
+    </article>
+
+    <article class="article" id="a7">
+      <div class="article-num">07</div>
+      <div class="article-body">
+        <h2>第7条（利用対象者に関する留意事項）</h2>
+        <p>本アプリは医師（歯科医師含む）・薬剤師のみを利用対象としており、資格を有しない者の利用を禁止しています。本アプリは未成年者を含む一般利用者を対象としたものではなく、未成年者から意図的に情報を収集する機能もありません。</p>
+      </div>
+    </article>
+
+    <article class="article" id="a8">
+      <div class="article-num">08</div>
+      <div class="article-body">
+        <h2>第8条（本ポリシーの改定）</h2>
+        <p>運営者は、法令の変更又は本アプリの機能追加等に伴い、本ポリシーの内容を改定することがあります。重要な変更を行う場合には、本アプリ内での告知その他相当な方法により、事前に周知します。改定後のプライバシーポリシーは、本アプリ内又は運営者が指定する方法で公表した時点から効力を生じます。</p>
+      </div>
+    </article>
+
+    <article class="article" id="a9">
+      <div class="article-num">09</div>
+      <div class="article-body">
+        <h2>第9条（お問い合わせ窓口）</h2>
+        <p>本ポリシーに関するお問い合わせは、下記窓口までご連絡ください。</p>
+        <div class="contact-box">
+          <div class="row"><span class="k">運営者</span><span>Seiwa LLC</span></div>
+          <div class="row"><span class="k">連絡先</span><span><a href="mailto:office@seiwa-llc.com">office@seiwa-llc.com</a></span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="addendum">
+      <span class="label">附則</span>
+      <p>本ポリシーは、令和8年（2026年）7月22日から適用します（案）。</p>
+      <div class="confirm-note">
+        <span class="tag">確認済み</span>令和8年（2026年）9月17日付で、厚生労働省より本アプリが医療機器（プログラム医療機器）に該当しない旨の回答を受領しています。
+      </div>
+      <div class="draft-note">
+        なお、本書は開発途上の記録に基づき作成した案であり、正式版としての適用に先立ち、法務・薬事専門家によるレビューを受けるものとします。
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-org">
+      <strong>小児薬剤投与量検索アプリ</strong><br>
+      運営者：Seiwa LLC<br>
+      office@seiwa-llc.com
+    </div>
+    <nav class="footer-links" aria-label="関連リンク">
+      <a href="./terms.html">利用規約</a>
+      <a href="mailto:office@seiwa-llc.com">お問い合わせ</a>
+    </nav>
+  </div>
+</footer>
+<p class="print-hint">最終更新：令和8年（2026年）7月22日（案）</p>
+
+</body>
+</html>
