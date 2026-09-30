@@ -366,6 +366,20 @@
     white-space:nowrap;
   }
   table.pp-table td a:hover{text-decoration:underline;}
+  .guideline-badge{
+    color:var(--accent-deep);
+    font-weight:700;
+    margin-left:2px;
+  }
+  .guideline-note{
+    font-size:13px;
+    color:var(--ink-soft);
+    background:var(--accent-soft);
+    border-left:3px solid var(--accent-deep);
+    padding:10px 14px;
+    margin:10px 0 0;
+    line-height:1.7;
+  }
 </style>
 </head>
 
@@ -744,12 +758,12 @@
             <thead><tr><th>薬剤名（一般名）</th><th>商品名（代表例）</th><th>添付文書</th></tr></thead>
             <tbody>
             <tr>
-              <td class="col-type" data-label="薬剤名（一般名）">プレドニゾロン</td>
+              <td class="col-type" data-label="薬剤名（一般名）">プレドニゾロン<span class="guideline-badge">※</span></td>
               <td data-label="商品名（代表例）">プレドニン</td>
               <td data-label="添付文書" class="col-note"><a href="https://www.kegg.jp/medicus-bin/japic_med?japic_code=00010794" target="_blank" rel="noopener noreferrer">添付文書を見る（kegg.jp）↗</a></td>
             </tr>
             <tr>
-              <td class="col-type" data-label="薬剤名（一般名）">プレドニゾロンコハク酸エステルナトリウム</td>
+              <td class="col-type" data-label="薬剤名（一般名）">プレドニゾロンコハク酸エステルナトリウム<span class="guideline-badge">※</span></td>
               <td data-label="商品名（代表例）">水溶性プレドニン</td>
               <td data-label="添付文書" class="col-note"><a href="https://www.kegg.jp/medicus-bin/japic_med?japic_code=00010805" target="_blank" rel="noopener noreferrer">添付文書を見る（kegg.jp）↗</a></td>
             </tr>
@@ -765,6 +779,7 @@
             </tr>
             </tbody>
           </table>
+          <p class="guideline-note">※ プレドニゾロン・プレドニゾロンコハク酸エステルナトリウムの2剤については、アプリ内の投与量計算の根拠を添付文書ではなく、日本アレルギー学会「小児気管支喘息治療・管理ガイドライン2023」p152 表8-6 としています。上記リンクは薬剤の基本情報（添付文書）としての参考であり、投与量の一次情報源ではありませんのでご注意ください。</p>
         </div>
         <div class="cat-block">
           <h3 class="cat-title">緊急薬（カテコラミン）</h3>
