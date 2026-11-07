@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>利用規約｜小児薬剤投与量検索アプリ</title>
-<meta name="description" content="小児薬剤投与量検索アプリ 利用規約（案）。運営者：Seiwa LLC">
+<meta name="description" content="小児薬剤投与量検索アプリ 利用規約。運営者：Seiwa LLC">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -344,14 +344,25 @@
     body{background:#fff;}
     .article-num{color:#000;}
   }
+
+  /* reviewed-text layout: numbered clauses, chapter dividers */
+  .article-body .clause{display:flex; gap:.5em; margin:0 0 14px; font-size:15px;}
+  .article-body .clause:last-child{margin-bottom:0;}
+  .article-body .clause .n{flex:0 0 1.7em; color:var(--ink-faint); font-variant-numeric:tabular-nums;}
+  .article-body .clause .t{min-width:0; flex:1;}
+  .article-body .clause.sub{margin-left:2.2em;}
+  .article-body .clause.sub .n{flex:0 0 0;}
+  .article-body .clause.plain .n{display:none;}
+  .chapter-head{margin:44px 0 0; padding-bottom:6px; font-family:var(--serif, inherit); font-size:13px; letter-spacing:.14em; color:var(--accent-deep); font-weight:700; border-bottom:2px solid var(--accent-deep);}
+  .toc li.toc-chapter{padding:10px 8px 2px; font-size:12px; letter-spacing:.1em; color:var(--ink-faint); font-weight:700;}
 </style>
 <header class="masthead">
   <div class="masthead-inner">
-    <div class="eyebrow"><span class="dot"></span>TERMS OF USE&nbsp;/&nbsp;案&nbsp;v1</div>
+    <div class="eyebrow"><span class="dot"></span>TERMS OF USE</div>
     <h1>小児薬剤投与量検索アプリ<br>利用規約</h1>
     <p class="sub">（PMDA添付資料 第2号）</p>
     <div class="meta-grid">
-      <div class="meta-item"><div class="k">制定日</div><div class="v">令和8年（2026年）7月25日</div></div>
+      <div class="meta-item"><div class="k">制定日</div><div class="v">2026年11月15日</div></div>
       <div class="meta-item"><div class="k">運営者</div><div class="v">Seiwa LLC</div></div>
       <div class="meta-item"><div class="k">対象アプリ</div><div class="v">小児薬剤投与量検索アプリ</div></div>
       <div class="meta-item"><div class="k">対象利用者</div><div class="v">医師・歯科医師・薬剤師</div></div>
@@ -364,155 +375,267 @@
   <nav class="toc" aria-label="目次">
     <p class="toc-title">目次</p>
     <ol>
-      <li><a href="#a1"><span class="num">01</span>適用</a></li>
-      <li><a href="#a2"><span class="num">02</span>対象者</a></li>
-      <li><a href="#a3"><span class="num">03</span>本アプリの内容</a></li>
-      <li><a href="#a4"><span class="num">04</span>情報の内容及び免責事項</a></li>
-      <li><a href="#a5"><span class="num">05</span>投与量表示機能に関する同意</a></li>
-      <li><a href="#a6"><span class="num">06</span>禁止事項</a></li>
-      <li><a href="#a7"><span class="num">07</span>知的財産権</a></li>
-      <li><a href="#a8"><span class="num">08</span>保証の否認及び責任の制限</a></li>
-      <li><a href="#a9"><span class="num">09</span>本アプリの変更・提供の停止等</a></li>
-      <li><a href="#a10"><span class="num">10</span>本規約の変更</a></li>
-      <li><a href="#a11"><span class="num">11</span>準拠法・裁判管轄</a></li>
-      <li><a href="#a12"><span class="num">12</span>お問い合わせ窓口</a></li>
+      <li class="toc-chapter">第1章　総則</li>
+      <li><a href="#a1"><span class="num">01</span>本規約への同意・適用</a></li>
+      <li><a href="#a2"><span class="num">02</span>本規約の変更</a></li>
+      <li><a href="#a3"><span class="num">03</span>本アプリの概要</a></li>
+      <li><a href="#a4"><span class="num">04</span>利用対象者</a></li>
+      <li><a href="#a5"><span class="num">05</span>本アプリの購入・使用開始</a></li>
+      <li><a href="#a6"><span class="num">06</span>動作環境</a></li>
+      <li><a href="#a7"><span class="num">07</span>使用終了・アンインストール</a></li>
+      <li class="toc-chapter">第2章　医療情報の取扱い</li>
+      <li><a href="#a8"><span class="num">08</span>薬剤情報の出典・確認日</a></li>
+      <li><a href="#a9"><span class="num">09</span>医療上の判断・情報の確認</a></li>
+      <li><a href="#a10"><span class="num">10</span>投与量表示機能の有効化</a></li>
+      <li class="toc-chapter">第3章　禁止事項</li>
+      <li><a href="#a11"><span class="num">11</span>禁止事項</a></li>
+      <li class="toc-chapter">第4章　購入・使用許諾</li>
+      <li><a href="#a12"><span class="num">12</span>購入代金・返金</a></li>
+      <li><a href="#a13"><span class="num">13</span>知的財産権・使用許諾</a></li>
+      <li class="toc-chapter">第5章　運営・責任等</li>
+      <li><a href="#a14"><span class="num">14</span>保証の範囲</a></li>
+      <li><a href="#a15"><span class="num">15</span>個人情報等の取扱い</a></li>
+      <li><a href="#a16"><span class="num">16</span>重要な通知</a></li>
+      <li><a href="#a17"><span class="num">17</span>損害賠償・責任の制限</a></li>
+      <li><a href="#a18"><span class="num">18</span>本アプリの変更・配信終了</a></li>
+      <li><a href="#a19"><span class="num">19</span>お問い合わせ</a></li>
+      <li><a href="#a20"><span class="num">20</span>準拠法・合意管轄</a></li>
+      <li><a href="#a21"><span class="num">21</span>分離可能性</a></li>
+      <li><a href="#a22"><span class="num">22</span>権利不放棄</a></li>
     </ol>
   </nav>
 
   <main class="doc">
 
     <section class="preamble">
-      <p>本利用規約（以下「本規約」といいます。）は、Seiwa LLC（以下「運営者」といいます。）が提供する<strong>「小児薬剤投与量検索アプリ」</strong>（以下「本アプリ」といいます。）の利用条件を定めるものです。本アプリをダウンロード又は利用した時点で、利用者は本規約の内容に同意したものとみなします。</p>
+      <p>スマートフォン向けアプリケーション「<strong>小児薬剤投与量検索アプリ</strong>」（以下「本アプリ」といいます。）の運営者「Seiwa LLC」（以下「運営者」といいます。）は、本アプリの利用について、以下のとおり利用規約（以下「本規約」といいます。）を定めます。</p>
     </section>
 
+    <div class="chapter-head">第1章　総則</div>
     <article class="article" id="a1">
       <div class="article-num">01</div>
       <div class="article-body">
-        <h2>第1条（適用）</h2>
-        <p>本規約は、本アプリの利用に関する運営者と利用者との間の一切の関係に適用されます。運営者が本アプリ内で掲示する諸規定（免責事項、プライバシーポリシー等を含みます。）は、本規約の一部を構成します。</p>
+        <h2>第1条（本規約への同意・適用）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリの利用者（以下「ユーザー」といいます。）は、本規約の内容を確認し、これに同意したうえで本アプリを利用するものとします。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本規約は、本アプリの利用に関する運営者とユーザーとの間の一切の関係に適用されます。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">運営者が本アプリの提供に際して提示するガイドライン、注意事項その他の利用条件（以下「ガイドライン等」といいます。）は、本規約の一部を構成します。</span></div>
+        <div class="clause"><span class="n">4.</span><span class="t">ユーザーは、本規約に同意したうえで、本アプリのインストールを開始するものとします。</span></div>
       </div>
     </article>
 
     <article class="article" id="a2">
       <div class="article-num">02</div>
       <div class="article-body">
-        <h2>第2条（対象者）</h2>
-        <p>本アプリは、以下の者（以下「対象者」といいます。）を対象として提供するものです。</p>
-        <p>1. 医師（歯科医師を含みます。）<br>2. 薬剤師</p>
-        <p><strong>対象者以外の方の利用は想定していません。</strong>本アプリをダウンロード又は利用しようとする方は、自らが対象者に該当するか否かを、自己の責任において判断するものとします。運営者は、ダウンロード又は利用する方が対象者に該当するか否かについて、個別に確認するものではありません。</p>
+        <h2>第2条（本規約の変更）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者は、次の各号のいずれかに該当する場合、民法第548条の4の規定に基づき、本規約を変更することがあります。<br>(1) 本規約の変更がユーザーの一般の利益に適合するとき。<br>(2) 本規約の変更が本アプリの利用に係る契約の目的に反せず、変更の必要性、変更後の内容の相当性その他の事情に照らして合理的なものであるとき。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者は、前項に基づき本規約を変更する場合、変更後の内容および効力発生日を運営者が設ける「サポート・お知らせ」ページ（<a href="https://seiwallc.github.io/pedi-rx-legal/support.html">https://seiwallc.github.io/pedi-rx-legal/support.html</a>）に掲載する方法その他適切な方法により、効力発生日までに周知します。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">変更後の本規約は、前項の効力発生日から効力を生じます。</span></div>
       </div>
     </article>
 
     <article class="article" id="a3">
       <div class="article-num">03</div>
       <div class="article-body">
-        <h2>第3条（本アプリの内容）</h2>
-        <p>本アプリは、救急外来等で小児患者（新生児〜15歳、体重0.3〜100kg）に対応する利用者に対し、症状・年齢・体重に応じた薬剤及び投与量の目安に関する参考情報を提供するものです。本アプリが提供する情報は、次条に定めるとおりあくまで参考情報にとどまり、診断・処方その他の医療行為を代替し、又はこれを推奨するものではありません。</p>
-        <p>本アプリは会員登録を必要とせず、個人情報の送信を行いません。詳細はプライバシーポリシーに定めるとおりです。</p>
+        <h2>第3条（本アプリの概要）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリは、救急外来等で小児患者（新生児から15歳まで、体重0.3kgから100kgまで）に対応する利用者に対し、症状、年齢および体重に応じた薬剤および投与量の目安に関する参考情報を検索・表示するアプリです。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本アプリが提供する情報は、診断、処方その他の医療行為を代替するものではなく、特定の薬剤または投与量を推奨するものでもありません。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">本アプリは会員登録を必要とせず、入力された患者情報は端末内で処理されます。個人情報等の取扱いは、別途定めるプライバシーポリシーによります。</span></div>
+        <div class="clause"><span class="n">4.</span><span class="t">本アプリの利用に必要な端末、OSその他の利用環境は、ユーザーの責任と費用において準備するものとします。</span></div>
       </div>
     </article>
 
     <article class="article" id="a4">
       <div class="article-num">04</div>
       <div class="article-body">
-        <h2>第4条（情報の内容及び免責事項）</h2>
-        <p>本アプリに掲載する薬剤投与量情報は、原則として各薬剤の添付文書（PMDA登録情報）及びJAPIC（一般社団法人日本医薬情報センター）掲載情報（kegg.jp経由で参照）に基づき、令和8年（2026年）10月20日時点で確認した内容を掲載しています。ただし、プレドニゾロン及びプレドニゾロンコハク酸エステルナトリウムの2剤については、日本小児アレルギー学会「小児気管支喘息治療・管理ガイドライン2023」p152 表8-6の記載を根拠としています。</p>
-        <p>添付文書その他の情報源は随時改訂される可能性があるため、本アプリに掲載する情報が常に最新であることを保証するものではありません。利用者は、本アプリの情報を利用するに際し、必ず最新の添付文書その他の一次情報を自ら確認するものとします。</p>
-        <p><strong>本アプリで表示される薬剤及び投与量はあくまで参考情報の提供にとどまり、特定の薬剤・投与量を推奨するものではありません。</strong></p>
-        <p>本アプリは、各薬剤の添付文書等に基づいて投与量の目安を表示しますが、患児の年齢・体重・病態・併用薬等により適切な投与量は異なります。必要に応じて、小児科専門医その他の専門家に投与量等を問い合わせ、その助言を得ることを推奨します。</p>
-        <p>処方その他の医療行為に関する最終的な判断は、全て利用者（第2条に定める対象者）の責任において行うものとします。</p>
+        <h2>第4条（利用対象者）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリは、医師（歯科医師を含みます。）、薬剤師および医師の指示のもとで医療業務に従事する看護師その他の医療従事者（以下「対象者」といいます。）による利用を想定して提供されます。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">対象者以外の方による利用は想定していませんが、対象者に該当する資格を本アプリの利用条件とはしません。運営者は、ユーザーが対象者に該当するかどうかを個別に確認しません。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">対象者以外のユーザーは、本アプリが医療従事者向けの参考情報を提供するものであり、自己判断による診断、処方または服薬のために利用することを想定していないことを理解したうえで本アプリを利用するものとします。</span></div>
       </div>
     </article>
 
     <article class="article" id="a5">
       <div class="article-num">05</div>
       <div class="article-body">
-        <h2>第5条（投与量表示機能に関する同意）</h2>
-        <p>本アプリにおける投与量の数値表示機能は、既定で無効（OFF）に設定されています。利用者が自らの判断で当該機能を有効化する場合、本アプリ内に表示される追加の同意事項に同意したうえで有効化するものとし、当該同意をもって本条に定める事項を承諾したものとみなします。</p>
+        <h2>第5条（本アプリの購入・使用開始）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">ユーザーは、App Storeその他運営者が指定するプラットフォーム（以下「ストア等」といいます。）を通じて本アプリを購入し、自身の端末にインストールすることができます。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本アプリの購入および決済には、ストア等が定める利用規約その他の条件が適用されます。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">本アプリの利用に必要な端末の管理、OSの更新その他の利用環境の整備は、ユーザーの責任において行うものとします。</span></div>
       </div>
     </article>
 
     <article class="article" id="a6">
       <div class="article-num">06</div>
       <div class="article-body">
-        <h2>第6条（禁止事項）</h2>
-        <p>利用者は、本アプリの利用にあたり、以下の行為をしてはなりません。</p>
-        <p>
-          1. 第2条に定める対象者以外の者に本アプリを利用させる行為<br>
-          2. 本アプリのリバースエンジニアリング、逆コンパイル、逆アセンブルその他の解析行為<br>
-          3. 本アプリの複製、改変、再配布、転売その他の第三者への提供行為（運営者が許諾した場合を除きます。）<br>
-          4. 本アプリが提供する情報を、患者又はその家族等、対象者以外の者に対しそのまま医療上の助言として提示する行為<br>
-          5. 運営者又は第三者の知的財産権、プライバシーその他の権利を侵害する行為<br>
-          6. 法令又は公序良俗に違反する行為<br>
-          7. その他、運営者が不適切と判断する行為
-        </p>
+        <h2>第6条（動作環境）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">ユーザーは、運営者が推奨する動作環境が示されている場合、当該環境において本アプリを利用することが推奨されます。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者は、すべての端末やOSのバージョンで本アプリが正常に動作することを保証しません。ただし、法令上認められない範囲で責任を免れるものではありません。</span></div>
       </div>
     </article>
 
     <article class="article" id="a7">
       <div class="article-num">07</div>
       <div class="article-body">
-        <h2>第7条（知的財産権）</h2>
-        <p>本アプリに関する著作権、商標権その他一切の知的財産権は、運営者又は正当な権利を有する第三者に帰属します。本規約に基づく本アプリの利用許諾は、利用者に対し知的財産権の譲渡又は使用許諾を意味するものではありません。</p>
+        <h2>第7条（使用終了・アンインストール）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">ユーザーは、任意に本アプリの使用を終了し、端末からアンインストールすることができます。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">アンインストールや端末の変更等に伴って端末内に保存された情報が消失する場合があります。運営者が当該情報を取得・保管していない場合、その復元には対応できません。</span></div>
       </div>
     </article>
 
+    <div class="chapter-head">第2章　医療情報の取扱い</div>
     <article class="article" id="a8">
       <div class="article-num">08</div>
       <div class="article-body">
-        <h2>第8条（保証の否認及び責任の制限）</h2>
-        <p>運営者は、本アプリに掲載する情報の正確性、完全性、有用性、特定目的への適合性について、明示又は黙示を問わず一切保証しません。</p>
-        <p>運営者は、本アプリの利用（本アプリに掲載する情報を利用した診断・処方その他の医療行為を含みます。）に起因して利用者又は第三者に生じた損害について、運営者の故意又は重過失による場合を除き、一切の責任を負いません。</p>
-        <p>本アプリは有料（買い切り型）で提供されますが、前二項の免責は、本アプリが有償で提供されることによって影響を受けるものではありません。</p>
-        <div class="draft-note">この条項は消費者契約法その他の強行法規との関係で有効性が争われ得るため、正式版としての適用に先立ち、法務専門家によるレビューを必須とします。</div>
+        <h2>第8条（薬剤情報の出典・確認日）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリに掲載する薬剤投与量情報は、原則として各薬剤の添付文書（PMDA登録情報）およびJAPIC（一般社団法人日本医薬情報センター）の掲載情報（KEGGのウェブサイトを経由して参照）に基づき、2026年10月20日時点で確認した内容を掲載しています。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">ただし、プレドニゾロンおよびプレドニゾロンコハク酸エステルナトリウムの2剤については、日本小児アレルギー学会「小児気管支喘息治療・管理ガイドライン2023」152ページ、表8-6の記載を根拠としています。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">前二項の情報源および確認日は、運営者が別途明示する更新情報等により変更される場合があります。</span></div>
       </div>
     </article>
 
     <article class="article" id="a9">
       <div class="article-num">09</div>
       <div class="article-body">
-        <h2>第9条（本アプリの変更・提供の停止等）</h2>
-        <p>運営者は、利用者への事前の通知なく、本アプリの内容を変更し、又は本アプリの提供を停止若しくは中止することができるものとします。運営者は、これによって利用者に生じた損害について、一切の責任を負いません。</p>
+        <h2>第9条（医療上の判断・情報の確認）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリに表示される薬剤および投与量は参考情報であり、特定の薬剤または投与量を推奨するものではありません。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">添付文書その他の情報源は随時改訂される可能性があります。本アプリに掲載する情報が常に最新であることは保証されません。ユーザーは、利用に際して最新の添付文書その他の一次情報を自ら確認するものとします。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">適切な投与量は、患児の年齢、体重、病態、併用薬その他の事情により異なります。必要に応じて小児科専門医その他の専門家に確認することが推奨されます。</span></div>
+        <div class="clause"><span class="n">4.</span><span class="t">診断、処方その他の医療行為については、関係法令および専門的知見に従い、それぞれの医療従事者がその資格および業務上の権限の範囲内で対応するものとします。本アプリの利用によって、医療従事者の業務上の権限が拡大されるものではありません。</span></div>
       </div>
     </article>
 
     <article class="article" id="a10">
       <div class="article-num">10</div>
       <div class="article-body">
-        <h2>第10条（本規約の変更）</h2>
-        <p>運営者は、必要と判断した場合には、利用者に通知することなく本規約を変更できるものとします。変更後の本規約は、本アプリ内に表示した時点又は運営者が別途定める時点から効力を生じるものとし、当該変更後に利用者が本アプリを利用した場合、変更後の規約に同意したものとみなします。</p>
+        <h2>第10条（投与量表示機能の有効化）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリにおける投与量の数値表示機能は、初期状態では無効（OFF）に設定されています。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">ユーザーが当該機能を有効化する場合、本アプリ内に表示される追加の同意事項を確認し、同意したうえで有効化するものとします。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">前項の同意は、本規約その他の注意事項に定める医療情報の性質や確認義務を変更するものではありません。</span></div>
       </div>
     </article>
 
+    <div class="chapter-head">第3章　禁止事項</div>
     <article class="article" id="a11">
       <div class="article-num">11</div>
       <div class="article-body">
-        <h2>第11条（準拠法・裁判管轄）</h2>
-        <p>本規約の解釈にあたっては、日本法を準拠法とします。本アプリに関して運営者と利用者との間で紛争が生じた場合には、運営者の本店所在地を管轄する裁判所を第一審の専属的合意管轄裁判所とします。</p>
+        <h2>第11条（禁止事項）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">ユーザーは、本アプリの利用に際し、次の行為をしてはなりません。</span></div>
+        <div class="clause sub"><span class="n"></span><span class="t">(1) 本アプリのリバースエンジニアリング、逆コンパイル、逆アセンブルその他の不正な解析行為</span></div>
+        <div class="clause sub"><span class="n"></span><span class="t">(2) 本アプリまたはそのプログラムを不正に複製、改変、再配布、転売または第三者に提供する行為（運営者が許諾した場合を除きます。）</span></div>
+        <div class="clause sub"><span class="n"></span><span class="t">(3) 本アプリの参考情報を医学的な確認や判断を経ずに患者またはその家族等に対して確定的な医療上の助言として提示する行為</span></div>
+        <div class="clause sub"><span class="n"></span><span class="t">(4) 運営者または第三者の知的財産権、プライバシーその他の権利を侵害する行為</span></div>
+        <div class="clause sub"><span class="n"></span><span class="t">(5) 法令または公序良俗に違反する行為</span></div>
+        <div class="clause sub"><span class="n"></span><span class="t">(6) 本アプリの正常な動作を妨げ、またはその安全性を損なう行為</span></div>
       </div>
     </article>
 
+    <div class="chapter-head">第4章　購入・使用許諾</div>
     <article class="article" id="a12">
       <div class="article-num">12</div>
       <div class="article-body">
-        <h2>第12条（お問い合わせ窓口）</h2>
-        <p>本規約に関するお問い合わせは、下記窓口までご連絡ください。</p>
-        <div class="contact-box">
-          <div class="row"><span class="k">運営者</span><span>Seiwa LLC</span></div>
-          <div class="row"><span class="k">連絡先</span><span><a href="mailto:office@seiwallc.com">office@seiwallc.com</a></span></div>
-        </div>
+        <h2>第12条（購入代金・返金）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリは買い切り型の有料アプリです。販売価格その他の販売条件は、ストア等に表示されるとおりとします。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本アプリの購入代金の支払い、キャンセルおよび返金の手続は、適用される法令およびストア等の定める条件に従います。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">本アプリの購入は、本アプリの著作権その他の知的財産権の譲渡を意味しません。</span></div>
+        <div class="clause"><span class="n">4.</span><span class="t">運営者は、本アプリの販売価格を変更し、または新たな有料機能もしくは有料バージョンを提供することがあります。この場合、運営者は、変更内容、適用時期および料金等について事前に第16条に定める方法により周知します。なお、既に購入された本アプリの使用については、ユーザーの同意なく追加料金を請求することはありません。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a13">
+      <div class="article-num">13</div>
+      <div class="article-body">
+        <h2>第13条（知的財産権・使用許諾）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリおよび本アプリを構成するプログラム、文章、画像その他のコンテンツに関する著作権、商標権その他の知的財産権は、運営者または正当な権利者に帰属します。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者は、ユーザーに対し、本規約およびストア等の条件に従い、本アプリを利用する非独占的な権利を許諾します。この利用には、対象者による通常の診療、調剤その他の業務における参考情報としての利用を含みます。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">ユーザーは、運営者または権利者の許諾なく、本アプリまたはそのコンテンツを本規約で認められた範囲を超えて複製、転載、改変、配布その他の方法により利用してはなりません。</span></div>
+        <div class="clause"><span class="n">4.</span><span class="t">運営者は、ユーザーが第11条に定める禁止事項に違反した場合、本アプリの使用許諾を解除することができます。この場合、ユーザーは、本アプリの使用を直ちに中止し、自己の端末から本アプリをアンインストールするものとします。</span></div>
+      </div>
+    </article>
+
+    <div class="chapter-head">第5章　運営・責任等</div>
+    <article class="article" id="a14">
+      <div class="article-num">14</div>
+      <div class="article-body">
+        <h2>第14条（保証の範囲）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリは、現状有姿で提供されます。運営者は、法令上認められる範囲において、本アプリの情報の正確性、完全性、最新性、特定目的への適合性およびすべての端末における正常な動作を保証しません。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">前項は、運営者が法令上負う責任を免除するものではありません。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a15">
+      <div class="article-num">15</div>
+      <div class="article-body">
+        <h2>第15条（個人情報等の取扱い）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者は、本アプリに関連して取得する個人情報その他の情報を、別途定めるプライバシーポリシーに従って取り扱います。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本アプリ内で入力・保存される情報の取扱いについては、プライバシーポリシーの定めによります。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a16">
+      <div class="article-num">16</div>
+      <div class="article-body">
+        <h2>第16条（重要な通知）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者からユーザーに対する重要な通知は、運営者が設ける「サポート・お知らせ」ページ（<a href="https://seiwallc.github.io/pedi-rx-legal/support.html">https://seiwallc.github.io/pedi-rx-legal/support.html</a>）に掲載する方法その他運営者が適切と判断する方法により行います。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本アプリがオフラインで動作することから、ユーザーが通知を確認できる時期は、通知方法やアプリの利用状況によって異なる場合があります。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a17">
+      <div class="article-num">17</div>
+      <div class="article-body">
+        <h2>第17条（損害賠償・責任の制限）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">ユーザーは、自己の責めに帰すべき事由により本規約に違反し、運営者または第三者に損害を与えた場合、法令に従い当該損害を賠償する責任を負います。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者が本アプリに関してユーザーに対して損害賠償責任を負う場合、運営者の故意または重大な過失による場合その他法令上責任の制限が認められない場合を除き、その責任は、現実に発生した直接かつ通常の損害に限られ、かつ当該ユーザーが本アプリの購入に際して支払った購入代金相当額を上限とします。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">本条は、消費者契約法その他の強行法規に反する範囲で適用されません。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a18">
+      <div class="article-num">18</div>
+      <div class="article-body">
+        <h2>第18条（本アプリの変更・配信終了）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者は、必要に応じて、本アプリの機能、掲載情報その他の内容を変更することがあります。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者は、ストア等における本アプリの新規配信やアップデートの提供を終了することがあります。重要な変更や配信終了については、可能な範囲で第16条に定める方法により周知します。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">本アプリは端末内で動作するため、配信やアップデートの終了が直ちにインストール済みの本アプリの動作停止を意味するものではありません。ただし、運営者は、将来のOSの変更等への対応、アップデートの継続的な提供および本アプリの継続的な動作を保証するものではありません。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a19">
+      <div class="article-num">19</div>
+      <div class="article-body">
+        <h2>第19条（お問い合わせ）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本規約および本アプリに関するお問い合わせは、運営者が本規約またはプライバシーポリシーの掲載ページに設ける「お問い合わせ」リンクからご連絡ください。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者名および連絡先は、前項のリンク先その他運営者が案内する場所に表示します。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a20">
+      <div class="article-num">20</div>
+      <div class="article-body">
+        <h2>第20条（準拠法・合意管轄）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本規約およびガイドライン等は、日本法に準拠して解釈されます。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本規約または本アプリの利用に関して運営者とユーザーとの間に紛争が生じた場合、法令に別段の定めがある場合を除き、運営者の所在地を管轄する地方裁判所または簡易裁判所を第一審の専属的合意管轄裁判所とします。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a21">
+      <div class="article-num">21</div>
+      <div class="article-body">
+        <h2>第21条（分離可能性）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本規約のいずれかの条項またはその一部が無効または執行不能と判断された場合でも、その他の条項および有効な部分は引き続き効力を有します。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a22">
+      <div class="article-num">22</div>
+      <div class="article-body">
+        <h2>第22条（権利不放棄）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者が本規約に基づく権利を行使しなかった場合であっても、その権利を放棄したものとはみなされません。</span></div>
       </div>
     </article>
 
     <div class="addendum">
-      <span class="label">附則</span>
-      <p>本規約は、令和8年（2026年）7月25日から適用します（案）。</p>
-      <div class="confirm-note">
-        <span class="tag">確認済み</span>令和8年（2026年）9月17日付で、厚生労働省より本アプリが医療機器（プログラム医療機器）に該当しない旨の回答を受領しています。
-      </div>
-      <div class="draft-note">
-        なお、本書は開発途上の記録に基づき作成した案であり、正式版としての適用に先立ち、法務専門家によるレビューを受けるものとします。特に第8条（保証の否認及び責任の制限）は、消費者契約法その他の強行法規との関係で有効性が争われ得る条項を含むため、専門家による確認が必須です。
-      </div>
+      <p>【制定日：2026年11月15日】</p>
     </div>
 
   </main>
@@ -533,7 +656,7 @@
     </nav>
   </div>
 </footer>
-<p class="print-hint">最終更新：令和8年（2026年）7月25日（案）</p>
+<p class="print-hint">制定日：2026年11月15日</p>
 
 </body>
 </html>
