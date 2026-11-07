@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>プライバシーポリシー｜小児薬剤投与量検索アプリ</title>
-<meta name="description" content="小児薬剤投与量検索アプリ プライバシーポリシー（案）。運営者：Seiwa LLC">
+<meta name="description" content="小児薬剤投与量検索アプリ プライバシーポリシー。運営者：Seiwa LLC">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -344,18 +344,29 @@
     body{background:#fff;}
     .article-num{color:#000;}
   }
+
+  /* reviewed-text layout: numbered clauses, chapter dividers */
+  .article-body .clause{display:flex; gap:.5em; margin:0 0 14px; font-size:15px;}
+  .article-body .clause:last-child{margin-bottom:0;}
+  .article-body .clause .n{flex:0 0 1.7em; color:var(--ink-faint); font-variant-numeric:tabular-nums;}
+  .article-body .clause .t{min-width:0; flex:1;}
+  .article-body .clause.sub{margin-left:2.2em;}
+  .article-body .clause.sub .n{flex:0 0 0;}
+  .article-body .clause.plain .n{display:none;}
+  .chapter-head{margin:44px 0 0; padding-bottom:6px; font-family:var(--serif, inherit); font-size:13px; letter-spacing:.14em; color:var(--accent-deep); font-weight:700; border-bottom:2px solid var(--accent-deep);}
+  .toc li.toc-chapter{padding:10px 8px 2px; font-size:12px; letter-spacing:.1em; color:var(--ink-faint); font-weight:700;}
 </style>
 </head>
 <body>
 
 <header class="masthead">
   <div class="masthead-inner">
-    <div class="eyebrow"><span class="dot"></span>PRIVACY POLICY&nbsp;/&nbsp;案&nbsp;v1</div>
+    <div class="eyebrow"><span class="dot"></span>PRIVACY POLICY</div>
     <h1>小児薬剤投与量検索アプリ<br>プライバシーポリシー</h1>
     <p class="sub">（PMDA添付資料 第5号）</p>
     <div class="meta-grid">
-      <div class="meta-item"><div class="k">制定日</div><div class="v">令和8年（2026年）7月22日</div></div>
-      <div class="meta-item"><div class="k">運営者</div><div class="v">開発者（小児科専門医）</div></div>
+      <div class="meta-item"><div class="k">制定日</div><div class="v">2026年11月15日</div></div>
+      <div class="meta-item"><div class="k">運営者</div><div class="v">Seiwa LLC</div></div>
       <div class="meta-item"><div class="k">対象アプリ</div><div class="v">小児薬剤投与量検索アプリ</div></div>
       <div class="meta-item"><div class="k">対象利用者</div><div class="v">医師・歯科医師・薬剤師</div></div>
     </div>
@@ -368,120 +379,140 @@
     <p class="toc-title">目次</p>
     <ol>
       <li><a href="#a1"><span class="num">01</span>基本方針</a></li>
-      <li><a href="#a2"><span class="num">02</span>取得する情報及び取得しない情報</a></li>
-      <li><a href="#a3"><span class="num">03</span>端末内データの管理</a></li>
-      <li><a href="#a4"><span class="num">04</span>第三者提供</a></li>
-      <li><a href="#a5"><span class="num">05</span>外部送信・SDK等について</a></li>
-      <li><a href="#a6"><span class="num">06</span>情報セキュリティ</a></li>
-      <li><a href="#a7"><span class="num">07</span>利用対象者に関する留意事項</a></li>
-      <li><a href="#a8"><span class="num">08</span>本ポリシーの改定</a></li>
-      <li><a href="#a9"><span class="num">09</span>お問い合わせ窓口</a></li>
+      <li><a href="#a2"><span class="num">02</span>取得する情報および取得しない情報</a></li>
+      <li><a href="#a3"><span class="num">03</span>取得した個人情報の利用目的</a></li>
+      <li><a href="#a4"><span class="num">04</span>端末内データの管理</a></li>
+      <li><a href="#a5"><span class="num">05</span>第三者提供および委託</a></li>
+      <li><a href="#a6"><span class="num">06</span>外部送信・SDKおよびアプリストアでの決済</a></li>
+      <li><a href="#a7"><span class="num">07</span>情報の安全管理</a></li>
+      <li><a href="#a8"><span class="num">08</span>個人情報の開示等</a></li>
+      <li><a href="#a9"><span class="num">09</span>利用対象者に関する留意事項</a></li>
+      <li><a href="#a10"><span class="num">10</span>本ポリシーの改定</a></li>
+      <li><a href="#a11"><span class="num">11</span>お問い合わせ窓口</a></li>
     </ol>
   </nav>
 
   <main class="doc">
 
-    <section class="preamble">
-      <p>開発者（以下「運営者」といいます。）は、運営者が提供する<strong>「小児薬剤投与量検索アプリ」</strong>（以下「本アプリ」といいます。）における利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。本アプリは、救急外来等で小児患者に対応する医師（歯科医師含む）・薬剤師のみを対象とした投与量参照ツールであり、本ポリシーはその利用実態に即して定めるものです。</p>
-    </section>
-
     <article class="article" id="a1">
       <div class="article-num">01</div>
       <div class="article-body">
         <h2>第1条（基本方針）</h2>
-        <p>本アプリは、<strong>個人情報及び健康・医療に関するデータを一切収集しない方針</strong>で設計されています。本アプリの利用にあたり、氏名・メールアドレス・電話番号等の会員登録は不要であり、運営者のサーバーに送信される利用者情報はありません。</p>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリは、利用者および患者の個人情報ならびに健康・医療に関する情報を運営者が取得しない設計としています。本アプリの利用にあたり、氏名、メールアドレス、電話番号等による会員登録は不要であり、本アプリに入力された情報が運営者のサーバーに送信されることはありません。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者は、個人情報の保護に関する法律その他の関係法令およびガイドライン等を遵守し、本アプリに関連して取得する個人情報を適切に取り扱います。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">本ポリシーは、本アプリにおける情報の取扱いのほか、運営者が本アプリに関するお問い合わせ等に際して取得する個人情報の取扱いについて定めます。</span></div>
       </div>
     </article>
 
     <article class="article" id="a2">
       <div class="article-num">02</div>
       <div class="article-body">
-        <h2>第2条（取得する情報及び取得しない情報）</h2>
-        <p>本アプリにおける情報の取扱いは以下のとおりです。</p>
+        <h2>第2条（取得する情報および取得しない情報）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリにおける情報の取扱いは次のとおりです。</span></div>
         <table class="pp-table">
           <thead><tr><th>情報の種類</th><th>取扱い</th><th>補足</th></tr></thead>
           <tbody>
-            <tr><td class="col-type" data-label="情報の種類">利用者・患者の個人情報<br>（氏名・生年月日・連絡先等）</td><td data-label="取扱い">収集しない</td><td class="col-note" data-label="補足">会員登録機能自体が存在しません。</td></tr>
-            <tr><td class="col-type" data-label="情報の種類">検索した患者の症状・年齢・体重等の入力値</td><td data-label="取扱い">収集しない（送信しない）</td><td class="col-note" data-label="補足">入力値は投与量計算のためアプリ内（端末内メモリ）で処理されるのみで、運営者のサーバーその他外部への送信は一切行いません。</td></tr>
-            <tr><td class="col-type" data-label="情報の種類">投与量表示の同意の記録<br>（同意した版・同意日時）</td><td data-label="取扱い">端末内にのみ保存</td><td class="col-note" data-label="補足">端末内のアプリ専用領域に保存され、外部送信は行いません。アプリを削除すると消去されます。</td></tr>
-            <tr><td class="col-type" data-label="情報の種類">投与量表示のON／OFFの状態</td><td data-label="取扱い">端末内にのみ保存</td><td class="col-note" data-label="補足">同上。端末内のアプリ専用領域に保存され、外部送信は行いません。</td></tr>
-            <tr><td class="col-type" data-label="情報の種類">お気に入り登録した薬剤の情報</td><td data-label="取扱い">端末内にのみ保存</td><td class="col-note" data-label="補足">同上。端末内のアプリ専用領域に保存され、外部送信は行いません。</td></tr>
-            <tr><td class="col-type" data-label="情報の種類">端末の識別情報（広告ID等）</td><td data-label="取扱い">収集しない</td><td class="col-note" data-label="補足">本アプリは広告表示機能を備えていません。</td></tr>
-            <tr><td class="col-type" data-label="情報の種類">利用状況の解析データ<br>（アクセス解析・クラッシュログ等）</td><td data-label="取扱い">現時点では収集しない</td><td class="col-note" data-label="補足">本アプリは現時点で外部解析ツール（アナリティクス等）を組み込んでいません。将来的に導入する場合は、本ポリシーを改定し、事前に本アプリ内で告知します。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">利用者・患者の個人情報（氏名・生年月日・連絡先等）</td><td data-label="取扱い">アプリでは収集しない</td><td class="col-note" data-label="補足">会員登録機能はありません。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">検索した患者の症状・年齢・体重等の入力値</td><td data-label="取扱い">収集・送信しない</td><td class="col-note" data-label="補足">端末内で計算処理され、運営者のサーバー等に送信されません。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">投与量表示の同意の記録（同意した版・同意日時）</td><td data-label="取扱い">端末内にのみ保存</td><td class="col-note" data-label="補足">アプリ専用領域に保存し、外部送信しません。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">投与量表示のON／OFFの状態</td><td data-label="取扱い">端末内にのみ保存</td><td class="col-note" data-label="補足">同上。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">お気に入り登録した薬剤の情報</td><td data-label="取扱い">端末内にのみ保存</td><td class="col-note" data-label="補足">同上。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">端末の識別情報（広告ID等）</td><td data-label="取扱い">アプリでは収集しない</td><td class="col-note" data-label="補足">広告表示機能はありません。</td></tr>
+            <tr><td class="col-type" data-label="情報の種類">利用状況の解析データ（アクセス解析・クラッシュログ等）</td><td data-label="取扱い">本ポリシー制定時点では収集しない</td><td class="col-note" data-label="補足">外部解析ツールは組み込んでいません。</td></tr>
           </tbody>
         </table>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者は、本アプリに関するお問い合わせ等を受けた場合、氏名、メールアドレス、お問い合わせ内容その他利用者が提供した情報を取得することがあります。</span></div>
       </div>
     </article>
 
     <article class="article" id="a3">
       <div class="article-num">03</div>
       <div class="article-body">
-        <h2>第3条（端末内データの管理）</h2>
-        <p>前条に定める投与量表示の同意の記録・ON／OFFの状態及びお気に入り情報は、いずれも利用者の端末内（アプリ専用領域）にのみ保存され、運営者を含む第三者がこれを閲覧・取得することはできません。利用者は、端末の設定又はアプリのアンインストールにより、これらのデータをいつでも削除することができます。</p>
+        <h2>第3条（取得した個人情報の利用目的）</h2>
+        <p>運営者は、前条第2項に基づき取得した個人情報を、お問い合わせへの回答、必要な連絡、本アプリに関するサポートおよびこれらに付随する対応のために利用します。</p>
       </div>
     </article>
 
     <article class="article" id="a4">
       <div class="article-num">04</div>
       <div class="article-body">
-        <h2>第4条（第三者提供）</h2>
-        <p>運営者は、本アプリを通じて取得する情報が存在しないため、第三者への情報提供は行いません。将来的に取扱いを変更する場合は、法令に従い、事前に利用者への周知又は同意取得を行います。</p>
+        <h2>第4条（端末内データの管理）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">投与量表示への同意の記録、表示のON／OFFの状態およびお気に入り情報は、利用者の端末内のアプリ専用領域に保存され、運営者には送信されません。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">これらのデータは、アプリのアンインストール等により削除される場合があります。運営者は当該データを保有していないため、開示、削除または復元の求めに対応できません。</span></div>
       </div>
     </article>
 
     <article class="article" id="a5">
       <div class="article-num">05</div>
       <div class="article-body">
-        <h2>第5条（外部送信・SDK等について）</h2>
-        <p>本アプリは、オフラインでの動作を前提として設計されており、薬剤情報等のデータはアプリ内蔵データとして端末にあらかじめ格納されています。本ポリシー制定時点において、広告SDK・アクセス解析SDKその他の外部送信を伴う機能は組み込んでいません。本アプリは有料（買い切り型）で提供され、購入手続き及び決済は、アプリストアの決済処理基盤（Apple App Store等）により行われます。運営者は、クレジットカード番号等の決済情報を取得しません。決済に関する情報の取扱いについては、当該基盤の提供者が定めるプライバシーポリシーが別途適用されます。</p>
+        <h2>第5条（第三者提供および委託）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者は、本アプリに入力・保存された情報を取得しないため、当該情報を第三者に提供しません。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">運営者がお問い合わせ等を通じて取得した個人情報は、法令に基づく場合その他個人情報保護法で認められる場合を除き、本人の同意なく第三者に提供しません。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">運営者が個人情報の取扱いを第三者に委託する場合は、委託先に対して必要かつ適切な監督を行います。</span></div>
       </div>
     </article>
 
     <article class="article" id="a6">
       <div class="article-num">06</div>
       <div class="article-body">
-        <h2>第6条（情報セキュリティ）</h2>
-        <p>本アプリは個人情報を収集しない設計とすることで、情報漏えいリスクそのものを低減しています。端末内に保存されるデータ（同意の記録・表示のON／OFF・お気に入り）についても、他のアプリからアクセスできない領域（各OSが提供するアプリケーションサンドボックス）に保存されます。</p>
+        <h2>第6条（外部送信・SDKおよびアプリストアでの決済）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">本アプリはオフラインでの動作を前提として設計され、薬剤情報等はアプリ内に格納されています。本ポリシー制定時点において、広告SDK、アクセス解析SDKその他の外部送信を伴う機能は組み込んでいません。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本アプリは買い切り型の有料アプリであり、購入および決済はApp Store等のストアが提供する決済基盤により行われます。運営者はクレジットカード番号等の決済情報を取得しません。ストア側での情報の取扱いには、当該ストアのプライバシーポリシー等が適用されます。</span></div>
       </div>
     </article>
 
     <article class="article" id="a7">
       <div class="article-num">07</div>
       <div class="article-body">
-        <h2>第7条（利用対象者に関する留意事項）</h2>
-        <p>本アプリは医師（歯科医師含む）・薬剤師を対象としたアプリであり、対象者以外の方の利用は想定していません。本アプリは未成年者を含む一般利用者を対象としたものではなく、未成年者から意図的に情報を収集する機能もありません。</p>
+        <h2>第7条（情報の安全管理）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者は、お問い合わせ等により取得した個人情報について、漏えい、滅失または毀損の防止その他の安全管理のために必要かつ適切な措置を講じます。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">本アプリの端末内保存データは、OSが提供するアプリケーション専用領域に保存されます。ただし、端末自体の設定、バックアップその他の利用環境による取扱いは、利用者が利用する端末およびOS等の仕様によります。</span></div>
       </div>
     </article>
 
     <article class="article" id="a8">
       <div class="article-num">08</div>
       <div class="article-body">
-        <h2>第8条（本ポリシーの改定）</h2>
-        <p>運営者は、法令の変更又は本アプリの機能追加等に伴い、本ポリシーの内容を改定することがあります。重要な変更を行う場合には、本アプリ内での告知その他相当な方法により、事前に周知します。改定後のプライバシーポリシーは、本アプリ内又は運営者が指定する方法で公表した時点から効力を生じます。</p>
+        <h2>第8条（個人情報の開示等）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者が保有する個人情報について、本人から法令に基づく開示、訂正、利用停止、消去等の請求があった場合は、本人確認等の必要な手続を行ったうえで、法令に従い適切に対応します。なお、運営者が取得・保有していない端末内データについては対応できません。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">前項の請求は、請求書、本人確認書類の写しおよび返信用封筒（返信先を記載し、必要な郵便料金分の切手を貼付したもの）を同封し、第11条に定める窓口宛てに郵送する方法により受け付けます。書面による回答を希望する場合は、個人情報の安全な送付のため、返信用封筒に簡易書留の料金を含む切手を貼付することを推奨します。必要書類および本人確認の方法については、事前にお問い合わせください。</span></div>
+        <div class="clause"><span class="n">3.</span><span class="t">運営者が取得・保有していない端末内データについては、開示、訂正、利用停止、消去等の請求に対応できません。</span></div>
       </div>
     </article>
 
     <article class="article" id="a9">
       <div class="article-num">09</div>
       <div class="article-body">
-        <h2>第9条（お問い合わせ窓口）</h2>
-        <p>本ポリシーに関するお問い合わせは、下記窓口までご連絡ください。</p>
+        <h2>第9条（利用対象者に関する留意事項）</h2>
+        <p>本アプリは、医師（歯科医師を含みます。）、薬剤師および医師の指示のもとで医療業務に従事する看護師その他の医療従事者による利用を想定していますが、利用資格の確認は行いません。本アプリには、未成年者を含む一般利用者から意図的に個人情報を取得する機能はありません。</p>
+      </div>
+    </article>
+
+    <article class="article" id="a10">
+      <div class="article-num">10</div>
+      <div class="article-body">
+        <h2>第10条（本ポリシーの改定）</h2>
+        <div class="clause"><span class="n">1.</span><span class="t">運営者は、法令の変更、本アプリの機能変更その他必要に応じて、本ポリシーを改定することがあります。重要な変更については、運営者が設ける「サポート・お知らせ」ページ（<a href="https://seiwallc.github.io/pedi-rx-legal/support.html">https://seiwallc.github.io/pedi-rx-legal/support.html</a>）に掲載する方法その他適切な方法により周知します。</span></div>
+        <div class="clause"><span class="n">2.</span><span class="t">変更後の本ポリシーは、運営者が定める効力発生日から適用します。個人情報の取扱いについて本人の同意が法令上必要となる場合は、必要な同意を取得します。</span></div>
+      </div>
+    </article>
+
+    <article class="article" id="a11">
+      <div class="article-num">11</div>
+      <div class="article-body">
+        <h2>第11条（お問い合わせ窓口）</h2>
+        <p>本ポリシーおよび個人情報の取扱いに関するお問い合わせは、次の窓口までご連絡ください。</p>
         <div class="contact-box">
-          <div class="row"><span class="k">運営者</span><span>Seiwa LLC</span></div>
-          <div class="row"><span class="k">連絡先</span><span><a href="mailto:office@seiwallc.com">office@seiwallc.com</a></span></div>
+          <div class="row"><span class="k" style="width:auto;min-width:72px">運営者</span><span>Seiwa LLC</span></div>
+          <div class="row"><span class="k" style="width:auto;min-width:72px">Eメールアドレス</span><span><a href="mailto:office@seiwallc.com">office@seiwallc.com</a></span></div>
         </div>
+        <p>運営者の所在地、代表者氏名および個人情報の開示等の請求に必要な郵送先住所については、上記窓口へのお問い合わせに応じて遅滞なくご案内します。</p>
+        <p>個人情報の開示等の請求は郵送により受け付けます。一般のお問い合わせはメールでも受け付けます。</p>
       </div>
     </article>
 
     <div class="addendum">
-      <span class="label">附則</span>
-      <p>本ポリシーは、令和8年（2026年）7月22日から適用します（案）。</p>
-      <div class="confirm-note">
-        <span class="tag">確認済み</span>令和8年（2026年）9月17日付で、厚生労働省より本アプリが医療機器（プログラム医療機器）に該当しない旨の回答を受領しています。
-      </div>
-      <div class="draft-note">
-        なお、本書は開発途上の記録に基づき作成した案であり、正式版としての適用に先立ち、法務・薬事専門家によるレビューを受けるものとします。
-      </div>
+      <p>【制定日：2026年11月15日】</p>
     </div>
 
   </main>
@@ -502,7 +533,7 @@
     </nav>
   </div>
 </footer>
-<p class="print-hint">最終更新：令和8年（2026年）7月22日（案）</p>
+<p class="print-hint">制定日：2026年11月15日</p>
 
 </body>
 </html>
